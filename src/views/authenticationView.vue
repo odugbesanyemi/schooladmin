@@ -7,10 +7,10 @@
                     <h1 class="text-4xl font-bold text-white">LOGIN</h1>
                 </div>
                 <div class="bg-white rounded-lg mt-10 drop-shadow-2xl">
-                    <div class="login-btn-group flex flex-row justify-around text-white bg-blue-900 rounded-t-lg">
-                        <button :class="{active:theme.student.isActive}" class="text-white py-5  w-full rounded-tl-lg" @click="userType='student',selectedTheme=theme.student.bg">Student Login</button>
-                        <button :class="{active:theme.parent.isActive}" class="w-full py-5 " @click="userType='parent',selectedTheme=theme.parent.bg">Parent Login</button>
-                        <button :class="{active:theme.teacher.isActive}" class="w-full py-5 rounded-tr-lg" @click="userType='teacher',selectedTheme=theme.teacher.bg">Teacher Login</button>
+                    <div class="login-btn-group flex flex-row justify-around rounded-t-lg">
+                        <button class=" py-5  w-full rounded-tl-lg" @click="userType='student',selectedTheme=theme.student.bg">Student Login</button>
+                        <button class="w-full py-5 " @click="userType='parent',selectedTheme=theme.parent.bg">Parent Login</button>
+                        <button class="w-full py-5 rounded-tr-lg" @click="userType='teacher',selectedTheme=theme.teacher.bg">Teacher Login</button>
                     </div>
                     <div class="login-btn-form bg-white/80 rounded-b-lg md:py-16 md:px-14 max-md:p-10">
                         <form action="# " class="flex flex-col justify-around">
@@ -51,7 +51,7 @@ export default {
                 },
                 student:{
                     bg:"bg-red-900/60",
-                    isActive:true
+                    isActive:false
                 },
                 teacher:{
                     bg:"bg-purple-900/60",
